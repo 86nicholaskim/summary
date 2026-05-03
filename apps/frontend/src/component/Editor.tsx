@@ -1,7 +1,7 @@
 import { LexicalComposer } from '@lexical/react/LexicalComposer';
-import { RichTextPlugin } from '@lexical/react/RichTextPlugin';
-import { ContentEditable } from '@lexical/react/ContentEditable';
+import { ContentEditable } from '@lexical/react/LexicalContentEditable';
 import { LexicalErrorBoundary } from '@lexical/react/LexicalErrorBoundary';
+import { RichTextPlugin } from '@lexical/react/LexicalRichTextPlugin';
 
 export default function Editor() {
   return (
