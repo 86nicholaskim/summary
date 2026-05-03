@@ -10,6 +10,10 @@
     "module": "esnext",
     "target": "esnext",
     "types": ["node"],
+    "typeRoots": [
+      "../../node_modules/@types", // 루트의 node_modules 참조
+      "./node_modules/@types" // 로컬의 node_modules 참조
+    ],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -42,5 +46,6 @@
     "verbatimModuleSyntax": true,
     "noEmit": true, // 중요: tsc는 파일 생성을 하지 않음 (Rollup이 함)
     "skipLibCheck": true
-  }
+  },
+  "include": ["src/**/*"] // src 폴더 내부만 감시하도록 명시
 }
