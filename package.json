@@ -1,20 +1,13 @@
 {
   "name": "summary",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/server.ts",
-  "engines": {
-    "node": "20.x"
-  },
   "type": "module",
   "scripts": {
-    "type-check": "tsc --noEmit",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c",
-    "dev": "rollup -c -w & nodemon dist/app.js",
-    "start": "node src/app.js",
-    "lint": "eslint \"src/**/*.{ts,js}\"",
-    "format": "prettier --write \"src/**/*.ts\""
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "type-check": "turbo run type-check",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"apps/**/*.{ts,tsx}\""
   },
   "keywords": [],
   "author": "",

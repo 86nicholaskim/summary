@@ -1,4 +1,17 @@
-# .gitignore
-node_modules/
+# Turbo 캐시 및 로그
+.turbo
+node_modules
+dist
+
+# 로그 파일
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 환경 변수 (보안)
 .env
-dist/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
