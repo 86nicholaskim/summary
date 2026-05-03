@@ -2,7 +2,7 @@
 
 > AI feedback 을 활용한 웹 어플리케이션 맛보기
 
-## github / github actions/ aws
+## Case 1. github / github actions/ aws
 
 실무에서 가장 많이 사용하는 GitHub + GitHub Actions + 클라우드(AWS/Vercel 등) 조합을 기준으로 한 흐름
 
