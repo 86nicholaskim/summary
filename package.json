@@ -13,7 +13,7 @@
     "build": "rollup -c",
     "dev": "rollup -c -w & nodemon dist/app.js",
     "start": "node src/app.js",
-    "lint": "eslint src/**",
+    "lint": "eslint \"src/**/*.{ts,js}\"",
     "format": "prettier --write \"src/**/*.ts\""
   },
   "keywords": [],
