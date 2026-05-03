@@ -3,9 +3,9 @@ name: CI (Remote Build & Lint)
 # 언제 실행할지 결정
 on:
   push:
-    branches: [main] # main 브랜치에 코드가 올라올 때
+    branches: [master] # master 브랜치에 코드가 올라올 때
   pull_request:
-    branches: [main] # main 브랜치로 합쳐달라는 요청이 올 때
+    branches: [master] # master 브랜치로 합쳐달라는 요청이 올 때
 
 jobs:
   build-and-test:
