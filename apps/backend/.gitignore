@@ -1,0 +1,6 @@
+node_modules
+dist
+.turbo
+
+# 빌드 시 생성되는 타입 정의 파일들 (필요시)
+dist/types
