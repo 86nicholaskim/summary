@@ -25,7 +25,7 @@ app.get('/api/status', (req: Request, res: Response) => {
 
 // 3. SPA 대응 (Express v5 규격 준수)
 // '/*'는 모든 경로를 매칭하며 index.html을 반환합니다.
-app.get('/:any*', (req: Request, res: Response) => {
+app.get('/\/.*\/', (req: Request, res: Response) => {
   const indexPath = path.join(publicPath, 'index.html');
   res.sendFile(indexPath, (err) => {
     if (err) {
