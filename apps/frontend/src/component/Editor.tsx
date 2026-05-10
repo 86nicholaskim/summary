@@ -10,6 +10,7 @@ import { HeadingNode, QuoteNode } from '@lexical/rich-text';
 import { ListNode, ListItemNode } from '@lexical/list';
 import { CodeNode, CodeHighlightNode } from '@lexical/code';
 import { TableNode, TableCellNode, TableRowNode } from '@lexical/table';
+import { LinkNode, AutoLinkNode } from '@lexical/link';
 
 import EditorStatePlugin from '../plugin/EditorStatePlugin';
 import Toolbar from './Toolbar';
@@ -30,6 +31,8 @@ export default function Editor() {
           TableNode,
           TableCellNode,
           TableRowNode,
+          LinkNode,
+          AutoLinkNode,
         ],
       }}
     >
