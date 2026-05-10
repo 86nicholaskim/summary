@@ -4,3 +4,7 @@ dist
 
 # 빌드 시 생성되는 타입 정의 파일들 (필요시)
 dist/types
+
+
+# public FE빌드 시 생성파일 ..\apps\frontend\vite.config.ts
+public/
