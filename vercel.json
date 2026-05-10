@@ -2,12 +2,7 @@
   "version": 2,
   "buildCommand": "pnpm turbo run build",
   "installCommand": "pnpm install",
-  "builds": [
-    {
-      "src": "apps/backend/dist/server.js",
-      "use": "@vercel/node"
-    }
-  ],
+  "outputDirectory": "apps/backend/dist",
   "routes": [
     {
       "src": "/(.*)",
