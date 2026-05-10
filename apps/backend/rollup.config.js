@@ -3,6 +3,19 @@ import typescript from '@rollup/plugin-typescript';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 
+import { writeFileSync } from 'fs';
+
+// 빌드 후 dist/package.json 생성하는 커스텀 플러그인
+const emitPackageJson = () => ({
+  name: 'emit-package-json',
+  writeBundle: () => {
+    writeFileSync(
+      'dist/package.json',
+      JSON.stringify({ type: 'module' }, null, 2)
+    );
+  },
+}); 
+
 export default {
   input: './src/server.ts', // 진입점
   output: {
