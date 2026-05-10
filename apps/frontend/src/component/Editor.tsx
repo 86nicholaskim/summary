@@ -37,7 +37,7 @@ export default function Editor() {
       }}
     >
       <Toolbar />
-      <div className="editor-shell">
+      <div className="editor-shell test">
         <RichTextPlugin
           contentEditable={<ContentEditable className="content-editable" />}
           placeholder={
