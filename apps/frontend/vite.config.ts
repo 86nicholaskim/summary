@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     // 빌드 결과물을 백엔드 주방(public)으로 바로 배달
     outDir: '../backend/public',
+    assetsDir: 'assets', // 빌드 파일들을 public/assets 폴더에 모음
     emptyOutDir: true, // 배달 전 기존 파일 청소
     // 소스맵 활성화 (기본값: false)
     sourcemap: true,
