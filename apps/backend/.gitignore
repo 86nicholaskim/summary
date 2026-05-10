@@ -7,4 +7,4 @@ dist/types
 
 
 # public FE빌드 시 생성파일 ..\apps\frontend\vite.config.ts
-public/assets
+public
