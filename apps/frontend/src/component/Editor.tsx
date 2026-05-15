@@ -14,6 +14,7 @@ import { LinkNode, AutoLinkNode } from '@lexical/link';
 
 import EditorStatePlugin from '../plugin/EditorStatePlugin';
 import Toolbar from './Toolbar';
+import DevToolsPlugin from '../plugin/DevToolsPlugin';
 
 export default function Editor() {
   return (
@@ -58,6 +59,7 @@ export default function Editor() {
         <TablePlugin />
         <MarkdownShortcutPlugin transformers={TRANSFORMERS} />
         <EditorStatePlugin />
+        {import.meta.env.DEV && <DevToolsPlugin />}
       </div>
     </LexicalComposer>
   );

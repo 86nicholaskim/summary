@@ -9,13 +9,15 @@
     "type-check": "turbo run type-check",
     "lint": "turbo run lint",
     "format": "prettier --write \"apps/**/*.{ts,tsx}\"",
-    "start": "node apps/backend/dist/server.js"
+    "start": "node apps/backend/dist/server.js",
+    "ai": "gemini"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.33.2",
   "devDependencies": {
+    "@google/gemini-cli": "^0.42.0",
     "@types/node": "^25.6.0",
     "@typescript-eslint/eslint-plugin": "^8.59.1",
     "@typescript-eslint/parser": "^8.59.1",
